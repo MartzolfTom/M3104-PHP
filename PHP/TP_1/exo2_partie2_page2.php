@@ -28,7 +28,7 @@
       ?>
       Prenom <input type="text" name="prenom_modif" value=" <?php echo "$prenom"; ?>"> <br/><br/>
       Mail <input type="text" name="mail_modif" value=" <?php echo "$mail"; ?> "><br/><br/>
-      Nom <input type="text" name="nom_modif" value=" <?php echo " $nom "; ?> "><br/><br/>
+      Num-client <input type="text" name="nom_modif" value=" <?php echo " $nom "; ?> "><br/><br/>
         <input type="submit" value="Ok">
     </form>
   </body>

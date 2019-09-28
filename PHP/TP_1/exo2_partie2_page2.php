@@ -5,7 +5,6 @@
     <title></title>
   </head>
   <body>
-    <h2>Modification du prenom et/ou mail</h2>
     <form class="" action="exo2_partie2_page3" method="post">
       <?php
         $db=mysqli_connect('localhost','root','');
@@ -26,9 +25,12 @@
 
         $requete= 'SELECT ';
       ?>
+      <br/><br/>
+      Num-client <input type="text" name="nom_modif" value=" <?php echo " $nom "; ?> "><br/><br/><br/><br/><br/><br/>
+      <h2>Modification du prenom et/ou mail</h2>
       Prenom <input type="text" name="prenom_modif" value=" <?php echo "$prenom"; ?>"> <br/><br/>
       Mail <input type="text" name="mail_modif" value=" <?php echo "$mail"; ?> "><br/><br/>
-      Num-client <input type="text" name="nom_modif" value=" <?php echo " $nom "; ?> "><br/><br/>
+
         <input type="submit" value="Ok">
     </form>
   </body>

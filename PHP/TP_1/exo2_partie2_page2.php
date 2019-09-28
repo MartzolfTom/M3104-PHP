@@ -23,10 +23,9 @@
 
         $nom=$_POST['nom'];
 
-        $requete= 'SELECT ';
       ?>
       <br/><br/>
-      Num-client <input type="text" name="nom_modif" value=" <?php echo " $nom "; ?> "><br/><br/><br/><br/><br/><br/>
+      Num-client <input type="text" name="nom_modif" value=" <?php echo " $nom "; ?> "><br/><br/><?php echo "c'est pas bô mais j'ai la flemme de faire une solution plus propre" ?><br/><br/><br/><br/>
       <h2>Modification du prenom et/ou mail</h2>
       Prenom <input type="text" name="prenom_modif" value=" <?php echo "$prenom"; ?>"> <br/><br/>
       Mail <input type="text" name="mail_modif" value=" <?php echo "$mail"; ?> "><br/><br/>

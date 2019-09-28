@@ -14,9 +14,11 @@
 
           $requete = 'SELECT no_client, nom_client FROM client';
           $result = mysqli_query($db,$requete);
+
           while ($ligne=mysqli_fetch_array($result)) {
             echo '<option value="'.$ligne['no_client'].'">'.$ligne['nom_client'].'</option>';
           }
+          
         ?>
       </select>
       <input type="submit" value="Ok">

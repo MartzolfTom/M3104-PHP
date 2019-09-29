@@ -15,5 +15,20 @@ public function add($client){
 
     $req->execute();
 }
+
+public function getList(){
+
+  $listeClients =array();
+  $sql='SELECT id_client, nom, prenom, enCours FROM client ORDER BY id_client desc';
+  $req= $this->db->query($sql);
+
+  while ($client = $req->fetch(PDO::FETCH_OBJ)) {
+    $listeClients[] = new Client($client);
+  }
+
+  return $listeClients;
+  $req->closeCursor();
+}
+
 }
  ?>

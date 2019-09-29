@@ -32,7 +32,6 @@ $tab=array('nom' => $_POST['nom'],'prenom' => $_POST['prenom'],'enCours' => $_PO
 
     $client=new Client($tab);
 
-echo $client->getNom();
 
   $manager ->add($client);
   echo "client ajouté";

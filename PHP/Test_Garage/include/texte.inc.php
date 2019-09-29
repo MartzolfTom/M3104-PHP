@@ -12,9 +12,15 @@ switch ($page) {
     case 1:
       include_once('pages/ajouterClient.inc.php');
     break;
+    case 2:
+      include_once('pages/listerClient.inc.php');
+    break;
     case 4:
     echo "Supprimer client";
     echo "<img src=\"image/oui.jpg\">";
+    break;
+    case 666:
+      session_destroy();
     break;
   default:
     echo "oui";

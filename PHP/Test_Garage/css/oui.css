@@ -43,15 +43,24 @@ table {
 }
 
 /* ****************************************************************** */
+
+h2{
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+	padding-top: 10px;
+}
+
 img{
   width: 300px;
 }
 
 body{
-  background-color: #CDCDCD;
+  background-color:#FFEBCD;
   color: black;
   font-family: Verdana, Arial, Helvetica;
 }
+
 #menu{
 float: left;;
 border: solid black 1px;
@@ -76,3 +85,19 @@ footer{
   text-align: center;
   padding:5px;
 }
+
+table{
+  border-collapse: collapse;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+table, th, td {
+  border: 1px solid black;
+	text-align: center;
+	padding : 5px 10px 10px 5px;
+}
+ul{padding-top: 15px;}
+
+li{padding-top: 5px;}

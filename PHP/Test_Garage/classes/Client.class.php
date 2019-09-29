@@ -7,7 +7,7 @@ class Client{
     private $prenom;
     private $enCours;
 
-public function __constructor ($valeurs = array()){
+public function __construct ($valeurs = array()){
   if(!empty($valeurs))
     $this ->affecte($valeurs);
   }

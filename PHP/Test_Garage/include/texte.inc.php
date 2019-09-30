@@ -15,6 +15,9 @@ switch ($page) {
     case 2:
       include_once('pages/listerClient.inc.php');
     break;
+    case 3:
+      include_once('pages/modifClient.inc.php');
+    break;
     case 4:
     echo "Supprimer client";
     echo "<img src=\"image/oui.jpg\">";

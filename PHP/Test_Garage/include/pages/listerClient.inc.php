@@ -12,6 +12,7 @@ $manager= new ClientManager($db);
      <th>enCours</th>
   </tr>
   <?php
+
   $listeClients = $manager->getList();
   foreach ($listeClients as $client) {
     ?>

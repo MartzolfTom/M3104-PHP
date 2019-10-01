@@ -23,8 +23,8 @@ if (empty($_POST['nom'])) {
 
   else {
         foreach ($listeClients as $client) {
-      //  echo $_POST['nom'];  echo $client->getNom();  echo "<br />";
-      
+         //echo $_POST['nom'];  echo $client->getNom();  echo "<br />";
+
           if($_POST['nom']==$client->getNom()){
 
             echo "test";
@@ -37,7 +37,7 @@ if (empty($_POST['nom'])) {
 
     <h2> Modifier un client </h2> <br>
     <form method ="post" action ="#">
-      Prenom <input type="text" name="nom_mofif" value=" <?php echo "$nom"; ?>"> <br/><br/>
+      Prenom <input type="text" name="nom_modif" value=" <?php echo "$nom"; ?>"> <br/><br/>
       Mail <input type="text" name="prenom" value=" <?php echo "$prenom"; ?> "><br/><br/>
       enCours <input type="text" name="enCours" value=" <?php echo "$enCours"; ?> "><br/><br/>
 

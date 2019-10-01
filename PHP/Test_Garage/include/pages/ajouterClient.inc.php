@@ -1,11 +1,11 @@
 <?php
 
-$db=new Mypdo();
+$db = new Mypdo();
 
-$manager= new ClientManager($db);
+$manager = new ClientManager($db);
 
 if (empty($_POST['nom'])) {
-  ?> <h2> Ajouter un client </h2> <br>
+    ?> <h2> Ajouter un client </h2> <br>
   <table class="nobordered">
   <form method ="post" action ="#">
   <tr>
@@ -25,15 +25,13 @@ if (empty($_POST['nom'])) {
   </tr>
   </table>
 
-<?php }
-  else {
+<?php } else {
 
-$tab=array('nom' => $_POST['nom'],'prenom' => $_POST['prenom'],'enCours' => $_POST['enCours']);
+    $tab = array('nom' => $_POST['nom'], 'prenom' => $_POST['prenom'], 'enCours' => $_POST['enCours']);
 
-    $client=new Client($tab);
+    $client = new Client($tab);
 
-
-  $manager ->add($client);
-  echo "client ajouté";
+    $manager->add($client);
+    echo "client ajouté";
 }
-   ?>
+?>

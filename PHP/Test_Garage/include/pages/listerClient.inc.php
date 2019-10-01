@@ -1,7 +1,7 @@
 <?php
-$db= new Mypdo();
-$manager= new ClientManager($db);
- ?>
+$db = new Mypdo();
+$manager = new ClientManager($db);
+?>
 
  <h2> Liste des clients </h2>
  <table>
@@ -13,8 +13,8 @@ $manager= new ClientManager($db);
   </tr>
   <?php
 
-  $listeClients = $manager->getList();
-  foreach ($listeClients as $client) {
+$listeClients = $manager->getList();
+foreach ($listeClients as $client) {
     ?>
     <tr>
       <td> <?php echo $client->getIdClient(); ?> </td>
@@ -23,5 +23,5 @@ $manager= new ClientManager($db);
       <td> <?php echo $client->getEnCours(); ?> </td>
     </tr>
   <?php }
-    ?>
+?>
   </table>

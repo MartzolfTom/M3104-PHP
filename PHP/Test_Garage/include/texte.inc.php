@@ -19,8 +19,7 @@ switch ($page) {
       include_once('pages/modifClient.inc.php');
     break;
     case 4:
-    echo "Supprimer client";
-    echo "<img src=\"image/oui.jpg\">";
+      include_once('pages/supprimerClient.inc.php');
     break;
     case 666:
       session_destroy();

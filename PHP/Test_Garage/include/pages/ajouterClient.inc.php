@@ -32,6 +32,10 @@ if (empty($_POST['nom'])) {
     $client = new Client($tab);
 
     $manager->add($client);
-    echo "client ajouté";
+    echo "client ajouté"; /*
+?>
+<br /><br />
+<input type="submit" value="Ajouter un autre client">
+    <?php*/
 }
 ?>

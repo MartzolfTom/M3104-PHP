@@ -55,6 +55,10 @@ img{
   width: 300px;
 }
 
+#vroom{
+	width:  100px;
+}
+
 body{
   background-color:#FFEBCD;
   color: black;

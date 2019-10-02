@@ -6,7 +6,7 @@
   </head>
   <body>
     <h2>Modification du prenom et/ou mail</h2>
-    <form action="exo2_partie2_page2.php" method="post">
+    <form action="modif_client.php" method="post">
       Nom : <select size="1" name="nom">
         <?php
           $db=mysqli_connect('localhost','root','');
@@ -18,7 +18,7 @@
           while ($ligne=mysqli_fetch_array($result)) {
             echo '<option value="'.$ligne['no_client'].'">'.$ligne['nom_client'].'</option>';
           }
-          
+
         ?>
       </select>
       <input type="submit" value="Ok">

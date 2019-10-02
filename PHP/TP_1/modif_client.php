@@ -5,7 +5,7 @@
     <title></title>
   </head>
   <body>
-    <form class="" action="exo2_partie2_page3" method="post">
+    <form class="" action="exec_modif_client" method="post">
       <?php
         $db=mysqli_connect('localhost','root','');
         mysqli_select_db($db,'client');

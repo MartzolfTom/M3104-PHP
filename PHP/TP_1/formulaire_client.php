@@ -6,7 +6,7 @@
   </head>
   <body>
     <h2>Merci de remplir le formulaire</h2>
-    <form action="exo2_page2.php" method="post">
+    <form action="recapitulatif_ecriture_bd" method="post">
       Nom : <input type="text" name="nom" value="tom"> <br/><br/>
       Prenom : <input type="text" name="prenom" value="martzolf"> <br/><br/>
       Email : <input type="text" name="email" value="tom.martzolf@gmail.com"> <br/><br/>

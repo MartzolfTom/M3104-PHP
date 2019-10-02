@@ -23,7 +23,7 @@ if (empty($_POST['nom'])) {
 
   else {
         foreach ($listeClients as $client) {
-         //echo $_POST['nom'];  echo $client->getNom();  echo "<br />";
+         echo "d".$_POST['nom']."f";  echo "d".$client->getNom()."f";  echo "<br />";
 
           if($_POST['nom']==$client->getNom()){
 

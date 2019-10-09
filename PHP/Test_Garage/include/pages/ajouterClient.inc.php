@@ -30,7 +30,7 @@ if (empty($_POST['nom'])) {
     $tab = array('nom' => $_POST['nom'], 'prenom' => $_POST['prenom'], 'enCours' => $_POST['enCours']);
 
     $client = new Client($tab);
-
+      
     $manager->add($client);
     echo "client ajouté"; /*
 ?>

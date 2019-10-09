@@ -21,6 +21,9 @@ switch ($page) {
     case 4:
       include_once('pages/supprimerClient.inc.php');
     break;
+    case 5:
+      include_once('pages/Twitch.inc.php');
+    break;
     case 666:
       session_destroy();
     break;
